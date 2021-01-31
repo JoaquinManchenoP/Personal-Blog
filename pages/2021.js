@@ -21,10 +21,10 @@ export async function getStaticProps() {
 
 export default function TwentyTwentyOne({ allBands }) {
   return (
-    <div className="">
+    <div className="myapp mx-96 ">
       <div>
         {allBands.map((band) => (
-          <div li={band.sys.id}>
+          <div className="pt-16 pb-16 pl-24" li={band.sys.id}>
             <BandCard band={band} />
           </div>
         ))}
