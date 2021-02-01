@@ -2,10 +2,17 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Profile from "../public/components/Profile.component";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <div className="mx-96 h-screen pt-8 space-y-12 pl-24 ">
+    <motion.div
+      className="mx-96 h-screen pt-8 space-y-12 pl-24 "
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+    >
       <div className="profile pb-6">
         <Profile />
       </div>
@@ -36,6 +43,6 @@ export default function Home() {
           </div>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 }

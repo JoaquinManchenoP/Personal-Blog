@@ -1,11 +1,14 @@
 import "../styles/index.css";
 import MainTitle from "../public/components/MainTitle.component";
+import { AnimatePresence } from "framer-motion";
 
 function MyApp({ Component, pageProps }) {
   return (
     <div className="bg-gray-800">
-      <MainTitle />
-      <Component {...pageProps} />
+      <AnimatePresence exitBeforeEnter>
+        <MainTitle />
+        <Component {...pageProps} />
+      </AnimatePresence>
     </div>
   );
 }

@@ -1,4 +1,6 @@
 import React from "react";
+import Profile from "../public/components/Profile.component";
+import { motion } from "framer-motion";
 
 import BandCard from "../public/components/BandCard.component";
 
@@ -21,7 +23,13 @@ export async function getStaticProps() {
 
 export default function TwentyTwentyOne({ allBands }) {
   return (
-    <div className="myapp mx-96 ">
+    <motion.div
+      className="myapp mx-96  "
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+    >
       <div>
         {allBands.map((band) => (
           <div className="pt-16 pb-16 pl-24" li={band.sys.id}>
@@ -29,6 +37,9 @@ export default function TwentyTwentyOne({ allBands }) {
           </div>
         ))}
       </div>
-    </div>
+      <div className="footer pl-24 pb-12">
+        <Profile />
+      </div>
+    </motion.div>
   );
 }
