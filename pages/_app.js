@@ -4,7 +4,7 @@ import { AnimatePresence } from "framer-motion";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="bg-gray-800">
+    <div className="bg-gray-800 ">
       <AnimatePresence exitBeforeEnter>
         <MainTitle />
         <Component {...pageProps} />
