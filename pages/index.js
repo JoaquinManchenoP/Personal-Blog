@@ -21,7 +21,7 @@ export default function Home() {
           <Link href="/2021">
             <div style={{ cursor: "pointer" }}>
               <div className="title text-pink-400 text-3xl font-londrina hover:text-pink-500  ">
-                <h2>Favorite Bands of 2021</h2>
+                <h2> My favorite Bands of 2021</h2>
               </div>
               <div className="description text-white details space-y-2 font-extralight pt-4 tracking-wider text-sm ">
                 <p>January 24, 2021</p>
