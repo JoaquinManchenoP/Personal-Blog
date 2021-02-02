@@ -7,7 +7,7 @@ const RICHTEXT_OPTIONS_PARAGRAPH = {
   renderNode: {
     [BLOCKS.PARAGRAPH]: (node, children) => {
       return (
-        <div className="paragraph my-20 pl-16">
+        <div className="paragraph  my-20 pl-16 xs:mr-12">
           <p>{children}</p>
         </div>
       );
@@ -31,14 +31,19 @@ export default function MovieCard({ movie }) {
   console.log(movie.fields.movieTitle);
   return (
     <div className="movieCard ">
-      <div className="movieTitle text-3xl pb-2 font-londrina font-light pt-10 ">
-        <h1>{movie.fields.movieTitle}</h1>
+      <div className="movititle text-2xl xl:mx-0 lg:mx-0 md:mx-0 sm:mx-44 ">
+        <h1 className=" xl:pl-0 lg:pl-80 md:pl-32 sm:pl-0 xs:pl-24 font-londrina text-2xl">
+          {movie.fields.movieTitle}
+        </h1>
       </div>
-      <div className="flex">
-        {documentToReactComponents(
-          movie.fields.movieDescription,
-          RICHTEXT_OPTIONS_PARAGRAPH
-        )}
+
+      <div className="movie_content">
+        <div className="xl:flex  ">
+          {documentToReactComponents(
+            movie.fields.movieDescription,
+            RICHTEXT_OPTIONS_PARAGRAPH
+          )}
+        </div>
       </div>
     </div>
   );

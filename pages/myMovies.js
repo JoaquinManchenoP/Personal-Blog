@@ -23,29 +23,29 @@ export async function getStaticProps() {
 export default function myMovies({ allMovies }) {
   return (
     <motion.div
-      className="myMovies lg:mx-96 md:mx-52 sm:mx-40 xs:mx-12 text-white pt-20 font-extralight tracking-widest"
+      className="myMovies xl:mx-96  md:mx-20 sm:mx-8 xs:mx-1  text-white pt-20 font-extralight tracking-widest"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
     >
-      <div className="title__section">
-        <div className="title text-5xl font-londrina font-light">
+      <div className="title__section xl:pl-0  lg:pl-72 md:pl-32 sm:pl-0 xs:pl-2 ">
+        <div className="title text-5xl font-londrina font-light xl:pl-0 lg:pl-4 ">
           <h1>Movies I would recomend</h1>
         </div>
-        <div className="post__date date font-extralight pt-4">
-          <p>february, 3 2021</p>
+        <div className="post__date date font-extralight pt-4  lg:pd-0 md:pd-0 sm:pl-0  xl:pl-0 lg:pl-4">
+          <p>February, 3 2021</p>
         </div>
       </div>
       <div className="content">
         {allMovies.map((movie) => (
-          <div className="movieCard pt-16">
+          <div className="movieCard pt-16 lg:flex-col ">
             {console.log(movie.fields.movieTitle)}
             <MovieCard movie={movie} key={movie.sys.id} />
           </div>
         ))}
       </div>
-      <div className="footer py-16">
+      <div className="footer py-16 xs:pl-20">
         <Profile />
       </div>
     </motion.div>
