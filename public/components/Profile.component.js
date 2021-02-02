@@ -11,7 +11,7 @@ export default function Profile() {
           </Link>
         </div>
         <div className="blog__description pl-8 pt-2 text-white font-light text-sm tracking-wider">
-          <p>Personal blog by Joaquin Mancheno</p>
+          <p>Personal blog by Joaquin Mancheno,</p>
           <p>I share everything I find interesting</p>
           <div className="contact text-pink-400 pt-2 flex space-x-8 ">
             <Link href="https://www.linkedin.com/in/joaquinjm/">

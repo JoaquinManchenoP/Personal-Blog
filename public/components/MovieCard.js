@@ -7,7 +7,7 @@ const RICHTEXT_OPTIONS_PARAGRAPH = {
   renderNode: {
     [BLOCKS.PARAGRAPH]: (node, children) => {
       return (
-        <div className="paragraph my-20 pl-20">
+        <div className="paragraph my-20 pl-16">
           <p>{children}</p>
         </div>
       );
@@ -19,7 +19,7 @@ const RICHTEXT_OPTIONS_PARAGRAPH = {
       }
       return (
         <img
-          className="lg:h-96 lg:w-96 mx-auto my-16 rounded-lg shadow-2xl"
+          className="h-96 w-72 mx-auto my-16 rounded-lg shadow-2xl"
           src={"https:" + node.data.target.fields.file.url}
         ></img>
       );
