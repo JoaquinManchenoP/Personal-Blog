@@ -45,7 +45,7 @@ export default function myMovies({ allMovies }) {
           </div>
         ))}
       </div>
-      <div className="footer py-16 xs:pl-20">
+      <div className="footer py-16 ">
         <Profile />
       </div>
     </motion.div>
