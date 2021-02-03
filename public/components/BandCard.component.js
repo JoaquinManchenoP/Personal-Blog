@@ -26,7 +26,7 @@ const RICHTEXT_OPTIONS_PARAGRAPH = {
 export default function BandCard({ band }) {
   return (
     <div className="text-white ">
-      <p className="text-3xl pb-8 font-londrina font-light pt-10  ">
+      <p className="text-2xl font-extralight pb-8  pt-8  ">
         {band.fields.bandName}
       </p>
       <div className="">

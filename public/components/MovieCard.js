@@ -7,7 +7,7 @@ const RICHTEXT_OPTIONS_PARAGRAPH = {
   renderNode: {
     [BLOCKS.PARAGRAPH]: (node, children) => {
       return (
-        <div className="paragraph  my-20 pl-16 xs:mr-12">
+        <div className="paragraph  my-20 pl-8 ">
           <p>{children}</p>
         </div>
       );
