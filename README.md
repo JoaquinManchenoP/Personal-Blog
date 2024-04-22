@@ -4,6 +4,7 @@ A Personal Blog built using React.js that uses the contentful CMS on the backend
 
 ## Screen Shots
 ![Alt text](blog.png?raw=true "blog")
+![Alt text](blog-band?raw=true "blog-band")
 
 
 ```bash
