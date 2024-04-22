@@ -10,18 +10,7 @@ A Personal Blog built using React.js that uses the contentful CMS on the backend
 ## Stack
 React.js, Contentful CMS
 
-## Run Locally
-Fork project to your github.
-git clone [peoject web URL]
-
-Go to the project directory
-cd Personal-Blog
-
-## Install dependencies
-npm install
-
-## Start the server 
-
-npm run start
+## Demo
+https://music-blog-zee9u6npn.vercel.app/2021
 
 
