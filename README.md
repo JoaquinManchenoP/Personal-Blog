@@ -1,8 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Personal Blog
 
-## Getting Started
+A Personal Blog built using React.js that uses the contentful CMS on the backend. Contentful makes it easier to add content. The app uses the contentful API and displays the content allowing to add content without editing the code.
 
-First, run the development server:
+## Screen Shots
+
 
 ```bash
 npm run dev
